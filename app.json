@@ -1,0 +1,17 @@
+{
+  "name": "aebiblioteca",
+  "description": "Proyecto CIISA - Taller de desarrollo de aplicaciones empresariales I - Solemne 2",
+  "scripts": {
+  },
+  "env": {
+    "MAVEN_CUSTOM_GOALS": "install payara-micro:bundle"
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
