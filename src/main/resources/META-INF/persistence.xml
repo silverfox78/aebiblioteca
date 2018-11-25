@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="DBLibro" transaction-type="RESOURCE_LOCAL">
+    <class>cl.ciisa.data.DBLibro</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-54-235-156-60.compute-1.amazonaws.com:5432/d7cank4l8b7g17"/>
+      <property name="javax.persistence.jdbc.user" value="zrigfwjkmwkurd"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="97f757f41cc3f4e4c21b4e167bbb8f91abb76973a7feca475332825d26e64046"/>
+    </properties>
+  </persistence-unit>
+</persistence>
