@@ -26,9 +26,9 @@ public class SrvLibro {
         try {
             em = emf.createEntityManager();
             List<DBLibro> lista = em.createNamedQuery("DBLibro.findAll").getResultList();
-            return Response.ok().entity(lista).build();
+            return Response.ok().entity(lista.size()).build();
         } catch (Exception e) {
-            return Response.ok(500).entity("Error al listar los datos - " + e.getMessage()).build();
+            return Response.serverError().entity("Error al listar los libros - " + e.getMessage()).build();
         }
     }
 }
