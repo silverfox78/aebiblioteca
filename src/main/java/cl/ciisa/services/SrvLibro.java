@@ -29,7 +29,7 @@ public class SrvLibro {
             if(lista.size() <= 0){
                 return Response.noContent().build();
             } else {
-                return Response.ok().entity(lista.size()).build();
+                return Response.ok().entity(lista).build();
             }
         } catch (Exception e) {
             return Response.serverError().entity("Error al listar los libros - " + e.getMessage()).build();
