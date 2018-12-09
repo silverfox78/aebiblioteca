@@ -43,9 +43,9 @@ public class SrvLibro {
     public Response guardarLibro(DBLibro libro){
         try {            
             em = emf.createEntityManager();
-            //em.getTransaction().begin();
+            em.getTransaction().begin();
             em.persist(libro);
-            //em.getTransaction().commit();
+            em.getTransaction().commit();
             
             return Response.status(Response.Status.CREATED).build();
         } catch (Exception e) {
